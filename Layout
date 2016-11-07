@@ -1,0 +1,164 @@
+\documentclass[pdf,color]{UoBnote}
+\author{James Luu, 1318804}
+\title{ C++ for Finance \\ Problem sheet 3}
+\shorttitle{By: James Luu}
+\date{November 2016}
+%\issue{1}
+
+\usepackage{listings} 
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{textcomp}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0} 
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{dark-gray}{gray}{0.3}
+
+\lstdefinestyle{bashStyle}{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+\lstdefinestyle{outputStyle}{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\ttfamily\color{dark-gray}},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  backgroundcolor=\color{light-grey}
+}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+backgroundcolor=\color{lbcolor},
+    tabsize=4,    
+%   rulecolor=,
+    language=[GNU]C++,
+        basicstyle=\scriptsize,
+        upquote=true,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=false,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        frame=single,
+        numbers=left,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.026,0.112,0.095},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+        numberstyle=\color[rgb]{0.205, 0.142, 0.73}
+%        \lstdefinestyle{C++}{language=C++,style=numbers}.
+}
+\lstset{
+    backgroundcolor=\color{white},
+    tabsize=4,
+  language=C++,
+  captionpos=b,
+  tabsize=3,
+  frame=lines,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  breaklines=true,
+  showstringspaces=false,
+  basicstyle=\footnotesize,
+%  identifierstyle=\color{magenta},
+  keywordstyle=\color[rgb]{0,0,1},
+  commentstyle=\color{Darkgreen},
+  stringstyle=\color{red}
+  }
+\renewcommand{\lstlistingname}{Source Code}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+%\renewcommand{\chaptername}{chapter}
+
+%\newcommand{\vect}[1]{\boldsymbol{#1}} % Uncomment for BOLD vectors.
+%\newcommand{\vect}[1]{\vec{#1}} % Uncomment for ARROW vectors.
+\newcommand{\vect}[1]{\vec{\boldsymbol{#1}}} % Uncomment for ARROW and BOLD
+\newcommand{\vecbrac}[1]{\Big({#1}\Big)}
+% vectors.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{1cm}\hrule \vspace{1cm}
+
+\newpage
+
+\section{Briefing}
+
+This is the hard copy of the C++ script written for the questions on Problem Sheet 3. The whole script is used to create 4 functions with a main.cpp file. 
+\begin{itemize}
+    \item Takes a long as an argument. If the number divides by 3 but not by 2 the function prints “Bingo!” otherwise it prints “Fooey!”
+    \item Takes two double arguments, $x$ and $y$, as its arguments. Computes and returns $f(x) = y^2 x^2 + 13 y x^3 - 2x^4$
+    \item Takes a string as an argument. Prints the string in reverse.
+    \item Takes a string and a long, N, as arguments. The function prints the Nth, 2Nth, 3Nth, ... , characters of the string given.
+\end{itemize}
+
+
+
+\subsection{Screenshot of the program}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{Screenshot.png}
+\end{center}
+  \caption{Screenshot of the console}
+\end{figure}
+
+
+\newpage
+
+\section{Source Code}
+\begin{lstlisting}[label={list:first},caption=main\_1318804.cpp.]
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// ID number - 1318804
+//  main.cpp
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+#include "utility.h"
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+int main (int argc, char *argv[])
+{
+    return ut::PauseAndReturn();
+}
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//	end
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+\end{lstlisting}
+\end{document}
